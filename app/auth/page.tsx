@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 export default function page() {
   useEffect(() => {
-    window.location.replace("http://localhost:3000/auth/github");
+    window.location.replace("http://api.reactgo.uz/auth/github");
   }, []);
   return (
     <div className="pt-20">
