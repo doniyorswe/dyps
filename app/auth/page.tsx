@@ -1,7 +1,6 @@
 "use client";
 
 import Spinner from "@/components/ui/spinner";
-import { useApi } from "@/hooks/use-api";
 import React, { useEffect } from "react";
 
 export default function page() {

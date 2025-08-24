@@ -1,4 +1,4 @@
-import ProjectCreateForm from "@/pages/projects/create-form";
+import ProjectCreateForm from "@/views/projects/create-form";
 import React from "react";
 
 export default function page() {

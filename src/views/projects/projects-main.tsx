@@ -5,7 +5,7 @@ import EmptyBox from "@/components/elements/empty-box";
 import { buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useApi } from "@/hooks/use-api";
-import ProjectCard from "@/pages/projects/project-card";
+import ProjectCard from "@/views/projects/project-card";
 import { Plus } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";

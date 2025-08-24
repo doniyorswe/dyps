@@ -1,7 +1,7 @@
 "use client";
 
 
-import ProjectsMain from "@/pages/projects/projects-main";
+import ProjectsMain from "@/views/projects/projects-main";
 import React from "react";
 
 export default function page() {
