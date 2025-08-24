@@ -75,17 +75,17 @@ export default function ProjectDetailPage({ params }: PageProps) {
                     <div className="flex items-center gap-2">
                       <code className="text-sm px-2 py-1 rounded text-sky-500 font-mono">
                         <a
-                          href={`http://${data?.subdomain}.reactgo.uz`}
+                          href={`http://${data?.subdomain}.dyps.uz`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {`${data?.subdomain}.reactgo.uz`}
+                          {`${data?.subdomain}.dyps.uz`}
                         </a>
                       </code>
                       {deployment.status === "ready" && (
                         <Button variant="ghost" size="sm">
                           <a
-                            href={`http://${data?.subdomain}.reactgo.uz`}
+                            href={`http://${data?.subdomain}.dyps.uz`}
                             target="_blank"
                             rel="noopener noreferrer"
                           >

@@ -26,11 +26,11 @@ export default function ProjectCard({
           <span
             onClick={(e) => {
               e.stopPropagation();
-              window.open(`http://${p.subdomain}.reactgo.uz`, "_blank");
+              window.open(`http://${p.subdomain}.dyps.uz`, "_blank");
             }}
             className="text-lg text-blue-500 dark:text-blue-400 cursor-pointer hover:underline"
           >
-            {`http://${p.subdomain}.reactgo.uz`}
+            {`http://${p.subdomain}.dyps.uz`}
           </span>
           <ActionMenu
             options={[
