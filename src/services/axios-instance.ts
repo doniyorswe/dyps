@@ -1,10 +1,8 @@
 import axios from "axios"
 
-// export const baseURL = "http://localhost:3000"
-export const baseURL = "https://api.reactgo.uz"
+export const baseURL = "https://dyps.kassalite.uz"
 
 const axiosInstance = axios.create({
-    // baseURL: "https://api.reactgo.uz",
     baseURL
 })
 
