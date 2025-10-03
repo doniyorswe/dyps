@@ -74,13 +74,13 @@ export default function ProjectDetailPage({ params }: PageProps) {
                     {/* Domain */}
                     <div className="flex items-center gap-2">
                       <code className="text-sm px-2 py-1 rounded text-sky-500 font-mono">
-                        <a
+                        {deployment.status == "ready" ? <a
                           href={`https://${data?.subdomain}.dyps.uz`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           {`${data?.subdomain}.dyps.uz`}
-                        </a>
+                        </a> : <span>domain loading...</span>}
                       </code>
                       {deployment.status === "ready" && (
                         <Button variant="ghost" size="sm">

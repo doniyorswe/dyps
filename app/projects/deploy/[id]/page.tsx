@@ -92,7 +92,7 @@ export default function DeployFrame({ params }: PageProps) {
           <label className="block text-muted-foreground text-sm font-medium mb-1">
             Framework Preset
           </label>
-          <Select defaultValue="reactjs">
+          <Select defaultValue="auto">
             <SelectTrigger className="bg-secondary dark:bg-card border-secondary w-full">
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 bg-secondary dark:bg-black rounded flex items-center justify-center">
@@ -102,7 +102,9 @@ export default function DeployFrame({ params }: PageProps) {
               </div>
             </SelectTrigger>
             <SelectContent className="bg-secondary dark:bg-card border-secondary">
+              <SelectItem value="auto">Auto detect</SelectItem>
               <SelectItem value="reactjs">React Js</SelectItem>
+              <SelectItem value="vuejs">Vue js</SelectItem>
             </SelectContent>
           </Select>
         </div>
