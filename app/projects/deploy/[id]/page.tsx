@@ -36,13 +36,16 @@ export default function DeployFrame({ params }: PageProps) {
 
   const { register, handleSubmit } = useForm<Fields>({
     values: {
-      name: data?.name!,
+      name: String(data?.name).toLowerCase()!,
       repo: data?.id!,
     },
   });
 
   const onSubmit = (vals: Fields) => {
-    mutate("projects", vals, {
+    mutate("projects", {
+      ...vals,
+      name: vals.name.toLowerCase()
+    }, {
       onSuccess(data: Project) {
         push(`/projects/${data.id}`);
       },
